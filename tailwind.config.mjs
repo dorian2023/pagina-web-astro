@@ -1,4 +1,5 @@
-import animations from '@midudev/tailwind-animations'
+import animations1 from '@midudev/tailwind-animations'
+import animations from 'tailwindcss-animated'
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -6,5 +7,8 @@ export default {
     theme: {
         extend: {},
     },
-    plugins: [animations],
+    plugins: [
+        animations1,
+        animations
+    ],
 }
