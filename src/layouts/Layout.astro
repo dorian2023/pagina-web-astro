@@ -1,5 +1,7 @@
 ---
 import Header from '../components/Header.astro';
+import '@fontsource/charm';
+
 interface Props {
 	description: string;
 	title: string;
@@ -27,7 +29,19 @@ const { description, title } = Astro.props;
 		color-scheme: dark;
 	}
 	html {
-		font-family: system-ui, sans-serif;
+		font-family: 'Charm', system-ui, sans-serif, cursive;
 		background: #000000;
+	}
+	p{
+		color: rgba(255, 255, 255, 0.9);
+		line-height: 1.4;
+		margin-bottom: 1em;
+		font-weight: 100;
+		font-size: 1em;
+		letter-spacing: .5px;
+	}
+	p strong{
+		color: white;
+		font-weight: 700;
 	}
 </style>

@@ -12,8 +12,10 @@
   "dependencies": {
     "@astrojs/check": "^0.7.0",
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource/charm": "^5.0.20",
     "@midudev/tailwind-animations": "^0.0.7",
     "astro": "^4.9.2",
+    "astro-icon": "^1.1.0",
     "typescript": "^5.4.5"
   },
   "devDependencies": {
