@@ -4,37 +4,68 @@
 >
     <div class="grid grid-cols-3 max-w-7xl mx-auto items-center justify-between">
         <a href="/" class="col-span-1">
-            <img src="./logo.jpg" alt="Logo" class="w-12 h-auto  rounded-full">
+            <img src="../logo.jpg" alt="Logo" class="w-12 h-auto  rounded-full">
         </a>
         <nav class="col-span-1 justify-self-center">
             <ul class="flex gap-4 text-1xl md:text-3xl">
                 <li>
-                    <a href="./" class="hover:underline">
+                    <a href="./" class="hover:underline font-semibold inline-block border-white px-2 py-1 justify-self-end hover:bg-white hover:text-black duration-1000 text-black">
                     Inicio
                     </a>
                 </li>
                 <li>
-                    <a href="./productos" class="hover:underline">
+                    <a href="productos" class="hover:underline font-semibold inline-block border-white px-2 py-1 justify-self-end hover:bg-white hover:text-black duration-1000 text-black">
                     Productos
                     </a>
                 </li>
                 <li>
-                    <a href="./productos">
+                    <a href="./productos" class="hover:underline font-semibold inline-block border-white justify-self-end hover:bg-white hover:text-black duration-1000 text-black">
                     Tiendas
                     </a>
                 </li>
                 <li>
-                    <a href="./productos">
+                    <a href="./productos" class="hover:underline font-semibold inline-block border-white  justify-self-end hover:bg-white hover:text-black duration-1000 text-black">
                     Contacto
                     </a>
                 </li>
             </ul>
         </nav>
         <a 
-           href="#"
-           class="border rounded-full inline-block border-white px-4 py-2 justify-self-end hover:bg-white hover:text-black duration-500 " 
+           href="./galeria"
+           class="border rounded-full inline-block border-black font-semibold px-4 py-2 justify-self-end hover:bg-white hover:text-black duration-500 text-black" 
        >
            GALERIA
         </a>
     </div>
 </header>
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+    
+    
+    a::before
+    {
+        content:attr(data-text);
+        position:absolute;
+        color:#fff;
+        width:350px;
+        overflow:hidden;
+        white-space:nowrap;
+        border-right:4px solid #fff;
+        animation:animate 8s linear infinite;
+        filter:drop-shadow(0 0 20px #fff) drop-shadow(0 0 50px #fff);
+    }
+    @keyframes animate
+    {
+        0%,10%,100%
+        {
+            width:0;
+        }
+        70%,90%
+        {
+            width:100%;
+        }
+    }
+    </style>
+    

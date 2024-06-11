@@ -1,0 +1,36 @@
+---
+import Sofas1 from "../components/comProductos/Sofas.astro";
+import Layout from "../layouts/Layout.astro";
+import Footer from "../components/comPaginas/Footer.astro";
+import HeroContainer from "../components/comPaginas/HeroContainer.astro";
+
+import Relentive from "../components/comPaginas/Relentive.astro";
+---
+<!-- LAYOUT -->
+<Layout
+  title="Muebles Bellagio - 🖥."
+  description="Muebles Bellagio, muebles de calidad.. Descubre nuestras ofertas.!"
+>
+
+  <!-- HERO -->
+  <HeroContainer src="https://i.ibb.co/DYnwj0d/sofas.png" />
+  <div
+    class="absolute inset-0 m-auto -w-full -h-full flex justify-center flex-col items-center"
+  >
+
+    <Relentive classet="relative animate-blurred-fade-in bottom-10 left-0 font-bold text-5xl border rounded-full inline-block border-white px-40 py-6 justify-self-end hover:bg-white hover:text-black duration-500" datatext="Sofas" />
+  </div>
+
+  <!-- MAIN -->
+  <main class="">
+    <Sofas1 />
+ </main>
+
+  <!-- FOOTER -->
+  <Footer />
+
+</Layout>
+
+
+
+

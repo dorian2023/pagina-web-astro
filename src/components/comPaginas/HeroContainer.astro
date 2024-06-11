@@ -1,0 +1,28 @@
+---
+interface Props {
+  src: string;
+  alt?: string;
+}
+const { src ,alt } = Astro.props;
+---
+
+<div
+  class="clip-path2 animate-blurred-fade-in lg:clip-path2 bg-no-repeat bg-cover cp-v relative h-[auto]  lg:h-[90vh] w-full max-w-[100vw]  "
+
+>
+  <img 
+    class="w-full clip-path object-cover object-center h-screen" 
+    src={src} 
+    alt={alt} 
+    
+    />
+</div>
+
+
+
+<style>
+  .clip-path2{
+      clip-path: polygon(0 0, 100% 0, 100% 95%, 55% 100%, 50% 100%, 0 95%);
+
+  }
+</style>
