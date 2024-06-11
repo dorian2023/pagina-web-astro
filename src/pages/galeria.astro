@@ -1,29 +1,29 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Video from "../components/comPaginas/Video.astro";
-import Buttons from "../components/comPaginas/Buttons.astro";
+import Relentive from "../components/comPaginas/Relentive.astro";
 import Footer from "../components/comPaginas/Footer.astro";
 import HeroContainer from "../components/comPaginas/HeroContainer.astro";
+import Galeria1 from "../components/comPaginas/Galeria.astro";
 ---
 
 <Layout
   title="Muebles Bellagio - 🖥."
   description="Muebles Bellagio, muebles de calidad.. Descubre nuestras ofertas.!"
 >
-	<!-- HERO -->
-  <HeroContainer src="https://i.ibb.co/9G0bfpF/karen32.png" />
+  <!-- HERO -->
+  <HeroContainer src="https://i.ibb.co/wscwTyP/GALERIA.png" />
   <div
     class="absolute inset-0 m-auto -w-full -h-full flex justify-center flex-col items-center"
   >
-    <Buttons 
-		title="GALERIA" 
-		href="./galeria" 
-		classe="relative bottom-10 left-0 border rounded-full inline-block border-white px-10 py-6 justify-self-end hover:bg-white hover:text-black duration-500"
-	/>
+    <Relentive
+      classet="relative animate-blurred-fade-in bottom-10 left-0 font-bold text-5xl border rounded-full inline-block border-white px-40 py-6 justify-self-end hover:bg-white hover:text-black duration-500"
+      datatext="GALERIA"
+    />
   </div>
 
-  	<!-- MAIN -->
+  <!-- MAIN -->
   <main>
+    <Galeria1 />
 
   </main>
 

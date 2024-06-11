@@ -7,7 +7,7 @@ interface Props {
 const { datatext } = Astro.props;
 ---
 
-<h2 class="relative text-4xl lg:text-7xl bottom-40  lg:bottom-20 left-0 text-black" data-text={ datatext }> { datatext } </h2>
+<h2 class="shadow1 relative text-4xl lg:text-7xl bottom-40  lg:bottom-20 left-0 text-black" data-text={ datatext }> { datatext } </h2>
 
 
 <style>
@@ -37,5 +37,14 @@ h2::before
         width:100%;
     }
 }
+
+
+.shadow1{
+    text-shadow: 0 0 10px rgba(247, 245, 133, 0.9);
+}
+.sbox{
+    box-shadow: 0 0 10px rgba(247, 245, 133, 0.9);
+}
+
 </style>
 

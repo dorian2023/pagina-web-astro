@@ -1,0 +1,67 @@
+---
+import "photoswipe/style.css"
+---
+
+<div class="grid grid-cols-4 max-w-6xl gap-4 mx-auto py-20 items-center content-center" id="gallery">
+  <a
+    class="rounded-3xl shadow-2xl shadow-sky-300 "
+    href="https://i.ibb.co/rZDtfh3/tog5.png"
+    data-pswp-width="2500"
+    data-pswp-height="1800"
+    target="_blank"
+    
+  >
+    <img
+    class="rounded-3xl shadow-2xl shadow-sky-300/10 "
+      src="https://i.ibb.co/rZDtfh3/tog5.png"
+      alt=""
+    />
+  </a>
+  <a
+  class="rounded-3xl shadow-2xl shadow-sky-300"
+    href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg"
+    data-pswp-width="1669"
+    data-pswp-height="2500"
+    target="_blank"
+  >
+    <img
+    class="rounded-3xl shadow-2xl shadow-sky-300/10"
+      src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"
+      alt=""
+    />
+  </a>
+  <a
+    href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"
+    data-pswp-width="2500"
+    data-pswp-height="1666"
+    target="_blank"
+  >
+    <img
+      src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"
+      alt=""
+    />
+  </a>
+
+  <a
+  href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"
+  data-pswp-width="2500"
+  data-pswp-height="1666"
+  target="_blank"
+>
+  <img
+    src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"
+    alt=""
+  />
+</a>
+</div>
+
+<script >
+  import PhotoSwipeLightbox from "photoswipe/lightbox";
+
+  const lightbox = new PhotoSwipeLightbox({
+    gallery: "#gallery",
+    children: "a",
+    pswpModule: () => import("photoswipe"),
+  });
+  lightbox.init();
+</script> 
