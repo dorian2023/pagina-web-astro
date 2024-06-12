@@ -20,6 +20,7 @@
     "astro-icon": "^1.1.0",
     "photoswipe": "^5.4.4",
     "preact": "^10.22.0",
+    "tw-elements": "^2.0.0",
     "typescript": "^5.4.5"
   },
   "devDependencies": {

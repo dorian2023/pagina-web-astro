@@ -1,79 +1,294 @@
-<header 
-    id="header-nav"
-    class="fixed w-screen py-2 z-50 top-0 px-8 lg:px-0"
->
-    <div class="grid grid-cols-3 max-w-7xl mx-auto items-center justify-between">
-        <a href="/" class="col-span-1">
-            <img src="../logo.jpg" alt="Logo" class="w-12 h-auto  rounded-full">
-        </a>
-        <nav class="col-span-1 justify-self-center">
-            <ul class="flex gap-4 text-1xl md:text-3xl">
-                <li>
-                    <a href="./" class="shadow1 hover:shadow1 rounded hover:underline font-semibold inline-block border-white px-2 py-1 justify-self-end hover:bg-white hover:text-black duration-1000 text-black">
-                    Inicio
-                    </a>
-                </li>
-                <li>
-                    <a href="productos" class="shadow1 hover:shadow1 rounded hover:underline font-semibold inline-block border-white px-2 py-1 justify-self-end hover:bg-white hover:text-black duration-1000 text-black">
-                    Productos
-                    </a>
-                </li>
-                <li>
-                    <a href="./productos" class="shadow1 hover:shadow1 rounded hover:underline font-semibold inline-block border-white px-2 py-1 justify-self-end hover:bg-white hover:text-black duration-1000 text-black">
-                    Tiendas
-                    </a>
-                </li>
-                <li>
-                    <a href="./productos" class="shadow1 hover:shadow1 rounded hover:underline font-semibold inline-block border-white px-2 py-1 justify-self-end hover:bg-white hover:text-black duration-1000 text-black">
-                    Contacto
-                    </a>
-                </li>
-            </ul>
-        </nav>
-        <a 
-           href="./galeria"
-           class="sbox shadow1 hover:shadow1 border rounded-full inline-block border-black font-semibold px-4 py-2 justify-self-end hover:bg-white hover:text-black duration-500 text-black" 
-       >
-           GALERIA
-        </a>
-    </div>
+---
+
+---
+
+<header id="header-nav" class="fixed w-screen py-2 z-50 top-0 px-8 lg:px-0">
+  <div
+    class="grid grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto items-center justify-between"
+  >
+    <a href="/" class="col-span-1">
+      <img src="../logo.jpg" alt="Logo" class="w-12 h-auto rounded-full sbox" />
+    </a>
+
+    <nav
+      class="flex w-full items-center justify-end bg-transparent font-bold py-2 lg:text-2xl dark:bg-black gap-4 lg:justify-start"
+      data-twe-navbar-ref
+    >
+      <div class="px-6 hidden lg:inline-block shadow1 sbox hover:bg-white border border-black  rounded-full">
+        <div
+          class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+          id="navbarSupportedContent1"
+          data-twe-collapse-item
+        >
+          <ul class="me-auto flex flex-row" data-twe-navbar-nav-ref>
+            <li data-twe-nav-item-ref>
+              <a
+                class="block py-2 pe-2 text-black transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                href="/">Inicio</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="px-6 hidden lg:inline-block shadow1 sbox hover:bg-white border border-black  rounded-full">
+        <div
+          class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+          id="navbarSupportedContent1"
+          data-twe-collapse-item
+        >
+          <ul class="me-auto flex flex-row" data-twe-navbar-nav-ref>
+            <li data-twe-nav-item-ref>
+              <a
+                class="block py-2 pe-2 text-black transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                href="/">Tiendas</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="px-6 shadow1 sbox hover:bg-white border border-black  rounded-full">
+        <button
+          class="block border-0 bg-transparent px-2 text-black/50 hover:no-underline hover:shadow-none focus:no-underline focus:shadow-none focus:outline-none focus:ring-0 dark:text-neutral-200 lg:hidden"
+          type="button"
+          data-twe-collapse-init
+          data-twe-target="#navbarSupportedContent1"
+          aria-controls="navbarSupportedContent1"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span
+            class="[&>svg]:w-7 [&>svg]:stroke-black/50 dark:[&>svg]:stroke-neutral-200"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </span>
+        </button>
+        <div
+          class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+          id="navbarSupportedContent1"
+          data-twe-collapse-item
+        >
+          <ul class="me-auto flex flex-row" data-twe-navbar-nav-ref>
+            <li class="static" data-twe-nav-item-ref data-twe-dropdown-ref>
+              <a
+                class="flex items-center whitespace-nowrap py-2 pe-2 text-black transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                href="#"
+                type="button"
+                id="dropdownMenuButtonX"
+                data-twe-dropdown-toggle-ref
+                aria-expanded="false"
+                data-twe-nav-link-ref
+                >Productos
+                <span class="ms-2 [&>svg]:h-5 [&>svg]:w-5">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                </span>
+              </a>
+              <div
+                class="absolute left-0 right-0 top-full z-[1000] mt-0 hidden w-full border-none bg-transparent bg-clip-padding shadow-lg data-[twe-dropdown-show]:block dark:bg-neutral-700"
+                aria-labelledby="dropdownMenuButtonX"
+                data-twe-dropdown-menu-ref
+              >
+                <div class="px-6 py-5 lg:px-8">
+                  <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+                    <div class=""> 
+                      <a
+                        href="./productos"
+                        aria-current="true"
+                        class="block w-full border rounded-full border-black bg-transparent px-6 py-2 text-black hover:bg-white sbox focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                        >Productos</a
+                      >
+                      <a
+                        href="./modulares"
+                        aria-current="true"
+                        class="block w-full border rounded-full border-black bg-transparent px-6 py-2 text-black hover:bg-white sbox focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                        >Modulares</a
+                      >
+                      <a
+                        href="/poltronas"
+                        aria-current="true"
+                        class="block w-full border rounded-full border-black bg-transparent px-6 py-2 text-black hover:bg-white sbox focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                        >Poltronas</a
+                      >
+                      <a
+                        href="./espejos"
+                        aria-current="true"
+                        class="block w-full border rounded-full border-black bg-transparent px-6 py-2 text-black hover:bg-white sbox focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                        >Espejos</a
+                      >
+                      <a
+                        href="./sofas"
+                        aria-current="true"
+                        class="block w-full border rounded-full border-black bg-transparent px-6 py-2 text-black hover:bg-white sbox focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                        >Sofas</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="./dormitorios"
+                        aria-current="true"
+                        class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                        >Dormitorios</a
+                      >
+                      <a
+                        href="./sofacamas"
+                        aria-current="true"
+                        class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                        >Sofacamas</a
+                      >
+                      <a
+                        href="#!"
+                        aria-current="true"
+                        class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                        >Cras justo odio</a
+                      >
+                      <a
+                        href="./sillasbar"
+                        aria-current="true"
+                        class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                        >Sillas Bar</a
+                      >
+                      <a
+                        href="./comedores"
+                        aria-current="true"
+                        class="block w-full bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                        >Comedores</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="mesatv"
+                        aria-current="true"
+                        class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                        >Mesa Tv</a
+                      >
+                      <a
+                        href="#!"
+                        aria-current="true"
+                        class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                        >Cras justo odio</a
+                      >
+                      <a
+                        href="#!"
+                        aria-current="true"
+                        class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                        >Est iure</a
+                      >
+                      <a
+                        href="#!"
+                        aria-current="true"
+                        class="block w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                        >Praesentium</a
+                      >
+                      <a
+                        href="#!"
+                        aria-current="true"
+                        class="block w-full bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                        >Laboriosam</a
+                      >
+                    </div>
+                    <div>
+                      <a
+                        href="./promociones"
+                        aria-current="true"
+                        class="block text-2xl w-full border-b border-neutral-100 bg-white px-6 py-2 text-neutral-700 hover:bg-zinc-200/60 focus:bg-zinc-200/60 focus:outline-none active:bg-zinc-200/60 active:no-underline dark:border-white/10 dark:bg-surface-dark dark:text-white dark:hover:bg-neutral-800/25 dark:focus:bg-neutral-800/25 dark:active:bg-neutral-800/25"
+                        >PROMOCIONES</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="px-6 hidden lg:inline-block shadow1 sbox hover:bg-white border border-black  rounded-full">
+        <div
+          class="!visible hidden flex-grow basis-[100%] items-center lg:!flex lg:basis-auto"
+          id="navbarSupportedContent1"
+          data-twe-collapse-item
+        >
+          <ul class="me-auto flex flex-row" data-twe-navbar-nav-ref>
+            <li data-twe-nav-item-ref>
+              <a
+                class="block py-2 pe-2 text-black transition duration-200 hover:text-black/80 hover:ease-in-out focus:text-black/80 active:text-black/80 motion-reduce:transition-none dark:text-white/60 dark:hover:text-white/80 dark:focus:text-white/80 dark:active:text-white/80 lg:px-2"
+                href="/">Contacto</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <a
+      href="./promociones"
+      class="sbox hidden lg:inline-block   shadow1 hover:shadow1 border rounded-full border-black font-semibold px-4 py-3 justify-self-end hover:bg-white hover:text-black duration-500 text-black"
+    >
+      PROMOCIONES DEL MES
+    </a>
+  </div>
 </header>
 
 
 <style>
-    @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-    
-    
-    a::before
-    {
-        content:attr(data-text);
-        position:absolute;
-        color:#fff;
-        width:350px;
-        overflow:hidden;
-        white-space:nowrap;
-        border-right:4px solid #fff;
-        animation:animate 8s linear infinite;
-        filter:drop-shadow(0 0 20px #fff) drop-shadow(0 0 50px #fff);
-    }
-    @keyframes animate
-    {
-        0%,10%,100%
-        {
-            width:0;
-        }
-        70%,90%
-        {
-            width:100%;
-        }
-    }
+  @import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
-    .shadow1{
-        text-shadow: 0 0 10px rgba(247, 245, 133, 0.9);
+  a::before {
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    width: 350px;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 4px solid #fff;
+    animation: animate 8s linear infinite;
+    filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 50px #fff);
+  }
+  @keyframes animate {
+    0%,
+    10%,
+    100% {
+      width: 0;
     }
-    .sbox{
-        box-shadow: 0 0 10px rgba(247, 245, 133, 0.9);
+    70%,
+    90% {
+      width: 100%;
     }
+  }
 
-    </style>
-    
+  .shadow1 {
+    text-shadow: 0 0 10px rgba(247, 245, 133, 0.9);
+  }
+  .sbox {
+    box-shadow: 0 0 10px rgba(247, 245, 133, 0.9);
+  }
+</style>
+
+<script
+  type="text/javascript"
+  src="../../../node_modules/tw-elements/js/tw-elements.umd.min.js"
+>
+// Initialization for ES Users
+import { Collapse, Dropdown, Ripple, initTWE } from "tw-elements";
+
+initTWE({ Collapse, Dropdown, Ripple });
+</script>

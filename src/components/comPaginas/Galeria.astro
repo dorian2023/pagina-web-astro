@@ -1,61 +1,81 @@
 ---
-import "photoswipe/style.css"
+import "photoswipe/style.css";
+import GaleriaItems from "./GaleriaItems.astro";
 ---
 
-<div class="grid grid-cols-4 max-w-6xl gap-4 mx-auto py-20 items-center content-center" id="gallery">
-  <a
-    class="rounded-3xl shadow-2xl shadow-sky-300 "
-    href="https://i.ibb.co/rZDtfh3/tog5.png"
-    data-pswp-width="2500"
-    data-pswp-height="1800"
-    target="_blank"
-    
-  >
-    <img
-    class="rounded-3xl shadow-2xl shadow-sky-300/10 "
-      src="https://i.ibb.co/rZDtfh3/tog5.png"
-      alt=""
-    />
-  </a>
-  <a
-  class="rounded-3xl shadow-2xl shadow-sky-300"
-    href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-2500.jpg"
-    data-pswp-width="1669"
-    data-pswp-height="2500"
-    target="_blank"
-  >
-    <img
-    class="rounded-3xl shadow-2xl shadow-sky-300/10"
-      src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/2/img-200.jpg"
-      alt=""
-    />
-  </a>
-  <a
-    href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"
-    data-pswp-width="2500"
-    data-pswp-height="1666"
-    target="_blank"
-  >
-    <img
-      src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"
-      alt=""
-    />
-  </a>
-
-  <a
-  href="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-2500.jpg"
-  data-pswp-width="2500"
-  data-pswp-height="1666"
-  target="_blank"
+<div
+  class="grid grid-cols-1 lg:grid-cols-3 m-10 max-w-6xl gap-2 lg:gap-36 mx-auto py-20 items-center content-center"
+  id="gallery"
 >
-  <img
-    src="https://cdn.photoswipe.com/photoswipe-demo-images/photos/3/img-200.jpg"
-    alt=""
-  />
-</a>
+  <GaleriaItems
+    class=""
+    title="NICOLE"
+    href="https://i.ibb.co/QrT0BvG/nicole1.png"
+  >
+    <div slot="video">
+      <video
+        src="/nicoleclip.mp4"
+        autoplay
+        loop
+        muted
+        class="rounded-xl left-0 top-0 bottom-0 w-full h-full object-cover"
+      >
+      </video>
+    </div>
+  </GaleriaItems>
+
+  <GaleriaItems
+    class=""
+    title="VANESSA"
+    href="https://i.ibb.co/0VQGFxQ/vanessa22222.png"
+  >
+    <div slot="video">
+      <video
+        src="/vanesa222.mp4"
+        autoplay
+        loop
+        muted
+        class="rounded-xl left-0 top-0 bottom-0 w-full h-full object-cover"
+      >
+      </video>
+    </div>
+  </GaleriaItems>
+
+  <GaleriaItems
+    class=""
+    title="MARIANA"
+    href="https://i.ibb.co/GpP2tDF/mariana1.png"
+  >
+    <div slot="video">
+      <video
+        src="/mariana.mp4"
+        autoplay
+        loop
+        muted
+        class="rounded-xl left-0 top-0 bottom-0 w-full h-full object-cover"
+      >
+      </video>
+    </div>
+  </GaleriaItems>
+  
+  <GaleriaItems
+  class=""
+  title=""
+  href="https://i.ibb.co/d4YfQ2V/Nicole.jpg"
+>
+  </GaleriaItems>
+
+  <GaleriaItems
+  class=""
+  title=""
+  href="https://i.ibb.co/dKKv7Sw/nicole292.png"
+  >
+  </GaleriaItems>
+
 </div>
 
-<script >
+
+<script>
   import PhotoSwipeLightbox from "photoswipe/lightbox";
 
   const lightbox = new PhotoSwipeLightbox({
@@ -64,4 +84,4 @@ import "photoswipe/style.css"
     pswpModule: () => import("photoswipe"),
   });
   lightbox.init();
-</script> 
+</script>
