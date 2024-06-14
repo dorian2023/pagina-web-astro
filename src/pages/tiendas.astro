@@ -1,0 +1,46 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Tiendas1 from "../components/Tiendas.astro";
+import Footer from "../components/comPaginas/Footer.astro";
+import "photoswipe/style.css";
+---
+
+<Layout
+  title="Muebles Bellagio - 🖥."
+  description="Muebles Bellagio, muebles de calidad.. Descubre nuestras ofertas.!"
+>
+  <div class="clip-path2 w-full relative place-content-center">
+    <video
+      autoplay
+      loop
+      muted
+      playsinline
+      class="tamanoA clip-path2 w-full h-auto object-cover aspect-square lg:aspect-video animate-fade-in animate-ease-in animate-duration-1000 aspect-ratio-8/10"
+    >
+      <source src="/tiendas3.mp4" type="video/mp4" />
+      <source src="/tiendas3.webm" type="video/webm" />
+      Tu navegador no soporta el elemento de video.
+    </video>
+  </div>
+
+  <main>
+    <Tiendas1 />
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .tamanoA {
+    height: 55em;
+  }
+  .clip-path2 {
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 55% 100%, 50% 100%, 0 95%);
+  }
+</style>
+
+<script>
+  // Initialization for ES Users
+  import { Carousel, initTWE } from "tw-elements";
+
+  initTWE({ Carousel });
+</script>
