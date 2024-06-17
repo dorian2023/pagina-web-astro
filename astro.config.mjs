@@ -6,5 +6,8 @@ import preact from "@astrojs/preact";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), icon(), preact()]
+  integrations: [tailwind(), icon(), preact()],
+  buildOptions: {
+    out: "dist" // Carpeta de salida
+  }
 });
