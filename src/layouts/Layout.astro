@@ -1,4 +1,5 @@
 ---
+
 import Header from '../components/comPaginas/Header.astro';
 import '@fontsource/charm';
 interface Props {
@@ -19,7 +20,7 @@ const { description, title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-		<Header client:load/>
+		<Header/>
 		<slot />
 	</body>
 </html>
