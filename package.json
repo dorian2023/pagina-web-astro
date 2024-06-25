@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
-    "@astrojs/preact": "^3.4.0",
+    "@astrojs/preact": "^3.5.0",
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource/charm": "^5.0.20",
     "@justinribeiro/lite-youtube": "^1.5.0",
@@ -19,7 +19,7 @@
     "astro": "^4.9.2",
     "astro-icon": "^1.1.0",
     "photoswipe": "^5.4.4",
-    "preact": "^10.22.0",
+    "preact": "^10.6.5",
     "tw-elements": "^2.0.0",
     "typescript": "^5.4.5"
   },
